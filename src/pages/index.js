@@ -5,16 +5,16 @@ import './index.css'
 
 const IndexPage = () => (
   <>
+    <div className="timeline-line" />
     <Layout>
-      <h1>the history of <br /> arkie</h1>
-      <h3>2016.05 - now</h3>
-      <button>explore</button>
+      <h1 className='cover-title'>the history of <br /> <span className="large-title">arkie</span></h1>
+      <button className='explore-btn'>EXPLORE</button>
     </Layout>
 
     <Layout>
-      <h1 className='event'>有的</h1>
+      <h1 className='event'><div className='event-bullet' />有的</h1>
       <h3 className='time'>2016.07 - 2016.10</h3>
-      <h3 className='intro'>有的是 arkie 的前身</h3>
+      <h3 className='intro'>「有的」是 arkie 的前身，当时产品名字还不叫 arkie. 第一版的产品形态非常简单，只有一个编辑器和我的作品，可以创建、编辑和保存海报。后来逐步加入设计算法，从纯手动做设计往自动生成设计转变。</h3>
       <image />
       <video />
     </Layout>
