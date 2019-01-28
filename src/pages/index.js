@@ -1,21 +1,38 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <>
+    <Layout>
+      <h1>the history of <br /> arkie</h1>
+      <h3>2016.05 - now</h3>
+      <button>explore</button>
+    </Layout>
+
+    <Layout>
+      <h1>有的</h1>
+      <h3>2016.05</h3>
+      <h3>介绍文字</h3>
+      <h3>arkie 的前身</h3>
+      <ul>
+        <li>重要数据</li>
+        <li>第一版编辑器</li>
+        <li>第一个吉祥物</li>
+        <li>第一次智能化设计</li>
+      </ul>
+    </Layout>
+
+    <Layout>
+      <h1>ARKIE beta</h1>
+      <h3>2016.10</h3>
+      <h3>介绍文字</h3>
+    </Layout>
+
+    <Layout>
+      <h1>一路走来 感谢有你</h1>
+    </Layout>
+  </>
 )
 
 export default IndexPage
