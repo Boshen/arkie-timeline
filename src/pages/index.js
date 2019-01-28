@@ -1,5 +1,6 @@
 import React from 'react'
 
+import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Chart from '../components/chart'
 import Image, { astronaut } from '../components/image'
@@ -8,6 +9,7 @@ import './index.css'
 
 const IndexPage = () => (
   <>
+    <SEO />
     <Chart />
     <div className="timeline-line" />
     <Layout>
@@ -37,7 +39,6 @@ const IndexPage = () => (
           <h2>120000+</h2>
         </li>
       </ul>
-      <image />
     </Layout>
 
     <Layout>

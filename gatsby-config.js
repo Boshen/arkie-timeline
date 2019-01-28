@@ -3,6 +3,7 @@ module.exports = {
     title: 'The History of Arkie',
     siteUrl: 'https://boshen.github.io/arkie-timeline/',
     description: 'The History of Arkie',
+    author: 'Boshen'
   },
   pathPrefix: "/arkie-timeline",
   plugins: [
@@ -11,7 +12,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: '${__dirname}/src/images',
+        path: `${__dirname}/src/images`,
       },
     },
     'gatsby-transformer-sharp',
@@ -22,10 +23,8 @@ module.exports = {
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        display: 'browser',
+        icon: 'src/images/arkie.png', // This path is relative to the root of the site.
       },
     },
     {
