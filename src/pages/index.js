@@ -11,22 +11,28 @@ const IndexPage = () => (
     </Layout>
 
     <Layout>
-      <h1>有的</h1>
-      <h3>2016.05</h3>
-      <h3>介绍文字</h3>
-      <h3>arkie 的前身</h3>
-      <ul>
-        <li>重要数据</li>
-        <li>第一版编辑器</li>
-        <li>第一个吉祥物</li>
-        <li>第一次智能化设计</li>
-      </ul>
+      <h1 className='event'>有的</h1>
+      <h3 className='time'>2016.07 - 2016.10</h3>
+      <h3 className='intro'>有的是 arkie 的前身</h3>
+      <image />
+      <video />
     </Layout>
 
     <Layout>
-      <h1>ARKIE beta</h1>
-      <h3>2016.10</h3>
-      <h3>介绍文字</h3>
+      <h1 className='event'>ARKIE beta</h1>
+      <h3 className='time'>2016.10 - 2017.05</h3>
+      <h3 className='intro'>开始积累设计算法，第一次在春节尝试裂变活动</h3>
+      <ul className='keypoint'>
+        <li>
+          <h6 className='keypointTitle'>开放时间</h6>
+          <h2 className='keypointContent'>2周</h2>
+        </li>
+        <li>
+          <h6>生成海报数</h6>
+          <h2>120000+</h2>
+        </li>
+      </ul>
+      <image />
     </Layout>
 
     <Layout>
