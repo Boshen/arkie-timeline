@@ -22,9 +22,11 @@ const renderTooltip = (props) => {
   )
 }
 
+const hasWindow = typeof window !== 'undefined'
+
 const Chart = React.memo(() => {
-  const width = window.innerWidth / 2.5
-  const height = window.innerHeight
+  const width = hasWindow ? window.innerWidth / 2.5 : 0
+  const height = hasWindow ? window.innerHeight : 0
   return (
     <div className={style.chart}>
       <LineChart width={width} height={height} data={data} layout={'vertical'}>
