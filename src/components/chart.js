@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts'
+import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts'
 import format from 'format-number'
 
 import data from './chart-data.json'
@@ -29,12 +29,12 @@ const Chart = React.memo(() => {
   const height = hasWindow ? window.innerHeight : 0
   return (
     <div className={style.chart}>
-      <LineChart width={width} height={height} data={data} layout={'vertical'}>
+      <AreaChart width={width} height={height} data={data} layout={'vertical'}>
         <Tooltip content={renderTooltip} />
         <XAxis hide={true} dataKey='generated' type="number" />
         <YAxis hide={true} dataKey="date" type="category"/>
-        <Line type="monotone" dataKey="generated" dot={false} stroke="#8884d8" />
-      </LineChart>
+        <Area type="basis" dataKey="generated" dot={false} stroke="white" />
+      </AreaChart>
     </div>
   )
 })

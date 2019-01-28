@@ -16,16 +16,6 @@ const typography = new Typography({
       fontWeight: 600,
       textTransform: 'uppercase'
     },
-    h2: {
-      color: 'white',
-    },
-    h3: {
-      color: '#7F7F7F',
-      fontWeight: 400,
-    },
-    h6: {
-      color: 'white',
-    },
     main: {
       backgroundColor: 'black'
     }

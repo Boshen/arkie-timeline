@@ -20,25 +20,31 @@ const IndexPage = () => (
     <Layout>
       <h1 className='event'><div className='event-bullet' />有的</h1>
       <h3 className='time'>2016.07 - 2016.10</h3>
-      <h3 className='intro'>「有的」是 arkie 的前身，当时产品名字还不叫 arkie. 第一版的产品形态非常简单，只有一个编辑器和我的作品，可以创建、编辑和保存海报。后来逐步加入设计算法，从纯手动做设计往自动生成设计转变。</h3>
+      <h3 className='intro'>有的是 arkie 的前身，当时产品名字还不叫 arkie. 第一版的产品形态非常简单，只有一个编辑器和我的作品，可以创建、编辑和保存海报。后来才逐步加入设计算法，开始自动生成设计。</h3>
       <Image query={astronaut}/>
       <video />
     </Layout>
 
     <Layout>
-      <h1 className='event'>ARKIE beta</h1>
+      <h1 className='event'><div className='event-bullet' />ARKIE beta</h1>
       <h3 className='time'>2016.10 - 2017.05</h3>
       <h3 className='intro'>产品正式改名为 arkie，并用上了由爱莲亲自设计的 LOGO. 此时 arkie 已经拥有自动生成设计的能力，尽管效果不是很完善。我们第一次尝试春节活动，在微信里利用 H5 制作春节海报，最后效果还不错。</h3>
       <ul className='keypoint'>
         <li>
-          <h6 className='keypoint-title'>开放时间</h6>
           <h2 className='keypoint-content'>2周</h2>
+          <h3 className='keypoint-title'>活动时间</h3>
         </li>
         <li>
-          <h6>生成海报数</h6>
-          <h2>120000+</h2>
+          <h2 className='keypoint-content'>120,000+</h2>
+          <h3 className='keypoint-title'>生成海报数</h3>
         </li>
       </ul>
+    </Layout>
+
+    <Layout>
+      <h1 className='event'><div className='event-bullet' />arkie 1.0</h1>
+      <h3 className='time'>2017.05.05</h3>
+      <h3 className='intro'>在 ARK DFC 大会上，第一次公开宣布 arkie 这个产品，arkie 1.0 正式发布。此时 arkie 已经可以生成各种不同的设计海报，用途和效果变得丰富多样。arkie 的团队规模也扩大了不少，从 ARK 办公室搬出来拥有了自己的办公室。</h3>
     </Layout>
 
     <Layout>
