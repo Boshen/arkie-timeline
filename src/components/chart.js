@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts'
 import format from 'format-number'
 
@@ -24,7 +23,7 @@ const renderTooltip = (props) => {
 }
 
 const Chart = React.memo(() => {
-  const width = window.innerWidth
+  const width = window.innerWidth / 2.5
   const height = window.innerHeight
   return (
     <div className={style.chart}>
