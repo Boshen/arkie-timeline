@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import './index.css'
 
 const IndexPage = () => (
   <>
@@ -24,8 +25,8 @@ const IndexPage = () => (
       <h3 className='intro'>开始积累设计算法，第一次在春节尝试裂变活动</h3>
       <ul className='keypoint'>
         <li>
-          <h6 className='keypointTitle'>开放时间</h6>
-          <h2 className='keypointContent'>2周</h2>
+          <h6 className='keypoint-title'>开放时间</h6>
+          <h2 className='keypoint-content'>2周</h2>
         </li>
         <li>
           <h6>生成海报数</h6>
