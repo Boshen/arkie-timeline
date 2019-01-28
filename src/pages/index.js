@@ -28,7 +28,7 @@ const IndexPage = () => (
     <Layout>
       <h1 className='event'>ARKIE beta</h1>
       <h3 className='time'>2016.10 - 2017.05</h3>
-      <h3 className='intro'>开始积累设计算法，第一次在春节尝试裂变活动</h3>
+      <h3 className='intro'>产品正式改名为 arkie，并用上了由爱莲亲自设计的 LOGO. 此时 arkie 已经拥有自动生成设计的能力，尽管效果不是很完善。我们第一次尝试春节活动，在微信里利用 H5 制作春节海报，最后效果还不错。</h3>
       <ul className='keypoint'>
         <li>
           <h6 className='keypoint-title'>开放时间</h6>
