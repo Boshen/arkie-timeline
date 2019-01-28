@@ -1,11 +1,13 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import Chart from '../components/chart'
 import './index.css'
 
 const IndexPage = () => (
   <>
     <div className="timeline-line" />
+    <Chart />
     <Layout>
       <h1 className='cover-title'>the history of <br /> <span className="large-title">arkie</span></h1>
       <button className='explore-btn'>EXPLORE</button>
