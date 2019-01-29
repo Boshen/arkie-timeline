@@ -1,6 +1,6 @@
 import 'modern-normalize/modern-normalize.css'
 
-import React, { useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import PageScroller from 'react-page-scroller'
 
 import SEO from '../components/seo'
@@ -12,14 +12,14 @@ import './index.css'
 
 const IndexPage = () => {
   const scroller = useRef(null)
+  const [page, setPage] = useState(1)
 
   return (
     <main>
       <SEO />
-      <Chart />
       <div className="timeline-line" />
 
-      <PageScroller ref={scroller}>
+      <PageScroller ref={scroller} pageOnChange={(page) => setPage(page)}>
         <article>
           <div className="timeline-line-mask" />
           <h1 className="cover-title">
