@@ -80,17 +80,12 @@ const Chart = React.memo(({ page }) => {
         width={width}
         height={height}
         data={chartData}
-        layout='vertical'
+        layout="vertical"
       >
         <Tooltip content={renderTooltip} />
         <XAxis hide={true} dataKey="acc" type="number" />
         <YAxis hide={true} dataKey="date" type="category" />
-        <Area
-          type="basis"
-          dataKey="acc"
-          dot={false}
-          stroke="white"
-        />
+        <Area type="basis" dataKey="acc" dot={false} stroke="white" />
       </AreaChart>
     </div>
   )

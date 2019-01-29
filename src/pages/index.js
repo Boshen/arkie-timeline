@@ -1,25 +1,33 @@
 import 'modern-normalize/modern-normalize.css'
 
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import PageScroller from 'react-page-scroller'
 
 import SEO from '../components/seo'
-import Chart from '../components/chart'
 
-import { Slide1 } from '../components/slides'
+import {
+  Slide1,
+  Slide2,
+  Slide3,
+  Slide4,
+  Slide5,
+  Slide6,
+  Slide7,
+  Slide8,
+  Slide9,
+} from '../components/slides/'
 
 import './index.css'
 
 const IndexPage = () => {
   const scroller = useRef(null)
-  const [page, setPage] = useState(1)
 
   return (
     <main>
       <SEO />
       <div className="timeline-line" />
 
-      <PageScroller ref={scroller} pageOnChange={(page) => setPage(page)}>
+      <PageScroller ref={scroller}>
         <article>
           <div className="timeline-line-mask" />
           <h1 className="cover-title">
@@ -72,6 +80,7 @@ const IndexPage = () => {
               <h3 className="keypoint-title">生成海报数</h3>
             </li>
           </ul>
+          <Slide2 />
         </article>
 
         <article>
@@ -96,6 +105,7 @@ const IndexPage = () => {
               <h3 className="keypoint-title">生成海报数</h3>
             </li>
           </ul>
+          <Slide3 />
         </article>
 
         <article>
@@ -119,6 +129,7 @@ const IndexPage = () => {
               <h3 className="keypoint-title">新生成海报数</h3>
             </li>
           </ul>
+          <Slide4 />
         </article>
 
         <article>
@@ -145,6 +156,7 @@ const IndexPage = () => {
               <h3 className="keypoint-title">二月16日</h3>
             </li>
           </ul>
+          <Slide5 />
         </article>
 
         <article>
@@ -159,6 +171,7 @@ const IndexPage = () => {
             小程序里制作好名片后，通过小程序分享给朋友。还为20多家企业定制名片模板，让企业员工使用
             arkie 小名片。
           </h3>
+          <Slide6 />
         </article>
 
         <article>
@@ -170,6 +183,7 @@ const IndexPage = () => {
           <h3 className="intro">
             继续探索更多新场景，希望获得再次的增长。比如做了作图卖货场景，将卖的商品做成海报，还能追踪别人查看的信息；比如做了愚人节、母亲节贺卡，在节日时间制作海报送人祝福。
           </h3>
+          <Slide7 />
         </article>
 
         <article>
@@ -183,6 +197,7 @@ const IndexPage = () => {
             增加了基于场景的设计方式，用户可以方便地选取一个场景，快速做出符合使用场景的设计海报。还公布了中文名称「作图」以及全新的品牌
             LOGO.
           </h3>
+          <Slide8 />
         </article>
 
         <article>
@@ -196,6 +211,7 @@ const IndexPage = () => {
             和暴走漫画达成合作，为每年一次的红鼻子公益活动，制作裂变小程序，并从中展示
             arkie 的设计能力。但合作途中暴漫因为烈士问题被封，最后合作无法继续。
           </h3>
+          <Slide9 />
         </article>
 
         <article>
