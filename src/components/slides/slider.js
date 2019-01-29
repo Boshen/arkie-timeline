@@ -7,13 +7,9 @@ import 'react-id-swiper/src/styles/css/swiper.css'
 // https://github.com/kidjp85/react-id-swiper
 
 const params = {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
   spaceBetween: 30,
   autoplay: true,
+  effect: 'fade',
 }
 
 const Slider = ({ children }) => {
