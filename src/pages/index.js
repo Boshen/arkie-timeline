@@ -3,6 +3,7 @@ import 'modern-normalize/modern-normalize.css'
 import React from 'react'
 
 import SEO from '../components/seo'
+import { Chart } from '../components/chart'
 
 import {
   Slide1,
@@ -217,6 +218,7 @@ const IndexPage = () => {
       <span
         className={style.exploreButton}
       >
+        <Chart />
         EXPLORE
         <span role="img" aria-label="down">
           👇

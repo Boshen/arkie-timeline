@@ -71,24 +71,21 @@ const pageToDate = {
   '12': '2019-1-24',
 }
 
-const Chart = React.memo(({ page }) => {
-  const width = hasWindow ? window.innerWidth / 2.5 : 0
-  const height = hasWindow ? window.innerHeight : 0
+export const Chart = React.memo(({ page }) => {
+  const width = hasWindow ? window.innerWidth / 2 : 0
+  const height = hasWindow ? window.innerHeight / 3 : 0
   return (
     <div className={style.chart}>
       <AreaChart
         width={width}
         height={height}
         data={chartData}
-        layout="vertical"
       >
         <Tooltip content={renderTooltip} />
-        <XAxis hide={true} dataKey="acc" type="number" />
-        <YAxis hide={true} dataKey="date" type="category" />
         <Area type="basis" dataKey="acc" dot={false} stroke="white" />
       </AreaChart>
     </div>
   )
 })
-
-export default Chart
+        // <XAxis hide={true} dataKey="acc" type="number" />
+        // <YAxis hide={true} dataKey="date" type="category" />
