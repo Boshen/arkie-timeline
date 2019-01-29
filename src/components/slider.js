@@ -8,20 +8,14 @@ const params = {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    clickable: true
+    clickable: true,
   },
   spaceBetween: 30,
   autoplay: true,
 }
 
 const Slider = ({ children }) => {
-  return (
-    <Swiper {...params}>
-      {children}
-    </Swiper>
-  )
+  return <Swiper {...params}>{children}</Swiper>
 }
 
 export default Slider
-
-

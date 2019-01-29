@@ -6,11 +6,14 @@ import data from './chart-data.json'
 import style from './chart.module.css'
 
 const scan = (arr, reducer, seed) => {
-  return arr.reduce(([acc, result], value, index) => {
-    acc = reducer(acc, value, index);
-    result.push(acc);
-    return [acc, result];
-  }, [seed, []])[1];
+  return arr.reduce(
+    ([acc, result], value, index) => {
+      acc = reducer(acc, value, index)
+      result.push(acc)
+      return [acc, result]
+    },
+    [seed, []]
+  )[1]
 }
 
 const formatNumber = format()
@@ -34,7 +37,7 @@ const renderTooltip = props => {
         <br />
         保存了 {formatNumber(data.saved)} 张海报
         <br />
-				新增了 {formatNumber(data.users)} 用户
+        新增了 {formatNumber(data.users)} 用户
       </div>
     )
   )
@@ -42,20 +45,28 @@ const renderTooltip = props => {
 
 const hasWindow = typeof window !== 'undefined'
 
-const chartData = scan(data, (a, b) => ({
-  ...b,
-  acc: a.acc + b.generated,
-}), {
-  acc: 0,
-})
-console.log(data, chartData)
+const chartData = scan(
+  data,
+  (a, b) => ({
+    ...b,
+    acc: a.acc + b.generated,
+  }),
+  {
+    acc: 0,
+  }
+)
 
 const Chart = React.memo(() => {
   const width = hasWindow ? window.innerWidth / 2.5 : 0
   const height = hasWindow ? window.innerHeight : 0
   return (
     <div className={style.chart}>
-      <AreaChart width={width} height={height} data={chartData} layout={'vertical'}>
+      <AreaChart
+        width={width}
+        height={height}
+        data={chartData}
+        layout={'vertical'}
+      >
         <Tooltip content={renderTooltip} />
         <XAxis hide={true} dataKey="acc" type="number" />
         <YAxis hide={true} dataKey="date" type="category" />

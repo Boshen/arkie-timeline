@@ -8,10 +8,9 @@ export const Slide1 = () => (
   <StaticQuery
     query={graphql`
       query {
-        images: allFile(filter: {
-          extension: { eq: "png" },
-          absolutePath: { regex: "/1/" }
-        }) {
+        images: allFile(
+          filter: { extension: { eq: "png" }, absolutePath: { regex: "/1/" } }
+        ) {
           edges {
             node {
               childImageSharp {
@@ -24,14 +23,15 @@ export const Slide1 = () => (
         }
       }
     `}
-    render={(data) => {
+    render={data => {
       return (
         <Slider>
-          {
-            data.images.edges.map((img) => (
-              <Img key={img.node.childImageSharp.fluid.src} fluid={ img.node.childImageSharp.fluid } />
-            ))
-          }
+          {data.images.edges.map(img => (
+            <Img
+              key={img.node.childImageSharp.fluid.src}
+              fluid={img.node.childImageSharp.fluid}
+            />
+          ))}
         </Slider>
       )
     }}

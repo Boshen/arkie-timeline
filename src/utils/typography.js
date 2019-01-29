@@ -42,9 +42,6 @@ const typography = new Typography({
       fontWeight: 600,
       textTransform: 'uppercase',
     },
-    main: {
-      backgroundColor: 'black',
-    },
   }),
 })
 
