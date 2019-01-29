@@ -1,6 +1,6 @@
 import 'modern-normalize/modern-normalize.css'
 
-import React, { useRef } from 'react'
+import React from 'react'
 
 import SEO from '../components/seo'
 
@@ -17,6 +17,7 @@ import {
 } from '../components/slides/'
 
 import './index.css'
+import style from './index.module.css'
 
 const data = [
   {
@@ -179,27 +180,27 @@ const data = [
 ]
 
 const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
-  <div className="container">
+  <div className={style.container}>
     <div>
-      <h1 className="event">
-        <div className="event-bullet" />
+      <h1 className={style.event}>
+        <div className={style.eventBullet}/>
         {title}
       </h1>
-      <h3 className="time">{subtitle}</h3>
-      <h3 className="intro">{desc}</h3>
+      <h3 className={style.time}>{subtitle}</h3>
+      <h3 className={style.intro}>{desc}</h3>
       {keypoints && (
-        <ul className="keypoint">
+        <ul className={style.keypoint}>
           {keypoints.map((k, i) => (
             <li key={i}>
-              <h2 className="keypoint-content">{k.content}</h2>
-              <h3 className="keypoint-title">{k.title}</h3>
+              <h2 className={style.keypointContent}>{k.content}</h2>
+              <h3 className={style.keypointTitle}>{k.title}</h3>
             </li>
           ))}
         </ul>
       )}
     </div>
     {Slide && (
-      <div className="slide">
+      <div className={style.slide}>
         <Slide />
       </div>
     )}
@@ -207,17 +208,14 @@ const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
 )
 
 const IndexPage = () => {
-  const scroller = useRef(null)
-
   const headerPage = (
-    <div key="header" className="wrap">
-      <div className="timeline-line-mask" />
-      <h1 className="cover-title">
-        the history of <br /> <span className="large-title">arkie</span>
+    <div key="header" className={style.wrap}>
+      <div className={style.timelineMask}/>
+      <h1 className={style.coverTitle}>
+        the history of <br /> <span className={style.largeTitle}>arkie</span>
       </h1>
       <span
-        className="explore-btn"
-        onClick={() => scroller.current.goToPage(1)}
+        className={style.exploreButton}
       >
         EXPLORE
         <span role="img" aria-label="down">
@@ -228,7 +226,7 @@ const IndexPage = () => {
   )
 
   const footerPage = (
-    <div key="footer" className="wrap">
+    <div key="footer" className={style.wrap}>
       <h1>一路走来 感谢有你</h1>
     </div>
   )
@@ -242,7 +240,7 @@ const IndexPage = () => {
   return (
     <main>
       <SEO />
-      <div className="timeline-line" />
+      <div className={style.timeline}/>
       {pages}
     </main>
   )
