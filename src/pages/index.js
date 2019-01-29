@@ -1,6 +1,10 @@
 import 'modern-normalize/modern-normalize.css'
 
 import React from 'react'
+import Fade from 'react-reveal/Fade'
+import Bounce from 'react-reveal/Bounce'
+import Tada from 'react-reveal/Tada'
+import RubberBand from 'react-reveal/RubberBand'
 
 import SEO from '../components/seo'
 import { Chart } from '../components/chart'
@@ -185,25 +189,35 @@ const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
     <div>
       <h1 className={style.event}>
         <div className={style.eventBullet} />
-        {title}
+        <Fade left>
+          {title}
+        </Fade>
       </h1>
-      <h3 className={style.time}>{subtitle}</h3>
-      <h3 className={style.intro}>{desc}</h3>
+      <Fade left delay={500}>
+        <h3 className={style.time}>{subtitle}</h3>
+      </Fade>
+      <Fade left delay={1000}>
+        <h3 className={style.intro}>{desc}</h3>
+      </Fade>
       {keypoints && (
-        <ul className={style.keypoint}>
-          {keypoints.map((k, i) => (
-            <li key={i}>
-              <h2 className={style.keypointContent}>{k.content}</h2>
-              <h3 className={style.keypointTitle}>{k.title}</h3>
-            </li>
-          ))}
-        </ul>
+        <Fade left delay={1500}>
+          <ul className={style.keypoint}>
+            {keypoints.map((k, i) => (
+              <li key={i}>
+                <h2 className={style.keypointContent}>{k.content}</h2>
+                <h3 className={style.keypointTitle}>{k.title}</h3>
+              </li>
+            ))}
+          </ul>
+        </Fade>
       )}
     </div>
     {Slide && (
-      <div className={style.slide}>
-        <Slide />
-      </div>
+      <Bounce delay={2500}>
+        <div className={style.slide}>
+            <Slide />
+        </div>
+      </Bounce>
     )}
   </div>
 )
@@ -212,9 +226,11 @@ const IndexPage = () => {
   const headerPage = (
     <div key="header" className={style.wrap}>
       <div className={style.timelineMask} />
-      <h1 className={style.coverTitle}>
-        the history of <br /> <span className={style.largeTitle}>arkie</span>
-      </h1>
+      <Tada>
+        <h1 className={style.coverTitle}>
+          the history of <br /> <span className={style.largeTitle}>arkie</span>
+        </h1>
+      </Tada>
       <Chart />
       <span className={style.exploreButton}>
         EXPLORE
@@ -227,7 +243,9 @@ const IndexPage = () => {
 
   const footerPage = (
     <div key="footer" className={style.wrap}>
-      <h1>一路走来 感谢有你</h1>
+      <RubberBand>
+        <h1>一路走来 感谢有你</h1>
+      </RubberBand>
     </div>
   )
 
