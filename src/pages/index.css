@@ -78,3 +78,8 @@
   color: #7F7F7F;
   font-weight: 400;
 }
+
+.slide {
+  width: 300px;
+  height: 300px;
+}

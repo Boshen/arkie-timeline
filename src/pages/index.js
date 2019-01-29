@@ -3,9 +3,11 @@ import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Chart from '../components/chart'
-import Image, { astronaut } from '../components/image'
+
+import { Slide1 } from '../components/slides'
 
 import './index.css'
+
 
 const IndexPage = () => (
   <>
@@ -35,8 +37,9 @@ const IndexPage = () => (
         有的是 arkie 的前身，当时产品名字还不叫 arkie.
         第一版的产品形态非常简单，只有一个编辑器和我的作品，可以创建、编辑和保存海报。后来才逐步加入设计算法，开始自动生成设计。
       </h3>
-      <Image query={astronaut} />
-      <video />
+      <div className='slide'>
+        <Slide1 />
+      </div>
     </Layout>
 
     <Layout>

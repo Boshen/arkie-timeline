@@ -38,6 +38,7 @@
     "react": "16.8.0-alpha.1",
     "react-dom": "16.8.0-alpha.1",
     "react-helmet": "^5.2.0",
+    "react-id-swiper": "^1.6.8",
     "react-typography": "^0.16.18",
     "recharts": "^1.4.2",
     "typography": "^0.16.18"
