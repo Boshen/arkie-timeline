@@ -86,6 +86,16 @@ const IndexPage = () => {
             已经可以生成各种不同的设计海报，用途和效果变得丰富多样。arkie
             的团队规模也扩大了不少，从 ARK 办公室搬出来拥有了自己的办公室。
           </h3>
+          <ul className="keypoint">
+            <li>
+              <h2 className="keypoint-content">6,500+</h2>
+              <h3 className="keypoint-title">用户</h3>
+            </li>
+            <li>
+              <h2 className="keypoint-content">20,000+</h2>
+              <h3 className="keypoint-title">生成海报数</h3>
+            </li>
+          </ul>
         </article>
 
         <article>
@@ -99,6 +109,16 @@ const IndexPage = () => {
             首次尝试企业服务，为企业提供规范设计和自动生成的能力，帮助企业从大批量重复劳动的设计中解放。最后由于饿了么被阿里收购
             / 微信支付更换负责人，合作没有继续。
           </h3>
+          <ul className="keypoint">
+            <li>
+              <h2 className="keypoint-content">120,000+</h2>
+              <h3 className="keypoint-title">新增用户</h3>
+            </li>
+            <li>
+              <h2 className="keypoint-content">5,700,000+</h2>
+              <h3 className="keypoint-title">新生成海报数</h3>
+            </li>
+          </ul>
         </article>
 
         <article>
@@ -111,6 +131,20 @@ const IndexPage = () => {
             第二次尝试春节活动，也是 arkie
             小程序首次亮相。姓氏吉言是个偶然的想法，决定要做之后，团队加班开发小程序、加班制作海报模板，最后大家努力的成果最后获得非常好的效果。用户量和生成海报数都得到爆发性增长。
           </h3>
+          <ul className="keypoint">
+            <li>
+              <h2 className="keypoint-content">8,000,000+</h2>
+              <h3 className="keypoint-title">二月生成海报数</h3>
+            </li>
+            <li>
+              <h2 className="keypoint-content">1,900,000+</h2>
+              <h3 className="keypoint-title">二月15日</h3>
+            </li>
+            <li>
+              <h2 className="keypoint-content">1,800,000+</h2>
+              <h3 className="keypoint-title">二月16日</h3>
+            </li>
+          </ul>
         </article>
 
         <article>
@@ -175,6 +209,16 @@ const IndexPage = () => {
             服务。用户可以用 arkie
             制作属于自己的日签小程序，给自己的粉丝每日打卡，增进互动。除了吴晓波，早期还有许多有名的合作客户，包括言几又、樊登、上海时装周、衣二三等等。
           </h3>
+          <ul className="keypoint">
+            <li>
+              <h2 className="keypoint-content">4331</h2>
+              <h3 className="keypoint-title">用户创建场景数</h3>
+            </li>
+            <li>
+              <h2 className="keypoint-content">6,000,000+</h2>
+              <h3 className="keypoint-title">生成海报数</h3>
+            </li>
+          </ul>
         </article>
 
         <article>
