@@ -34,6 +34,7 @@ const data = [
       可以创建、编辑和保存海报。后来才逐步加入设计算法，开始自动生成设计。
       `,
     Slide: Slide1,
+    video: `../1/youd_video.mp4`,
   },
   {
     title: 'arkie beta',
@@ -50,7 +51,7 @@ const data = [
         title: '活动时间',
       },
       {
-        content: '120,000+',
+        content: '120,000',
         title: '生成海报数',
       },
     ],
@@ -66,8 +67,8 @@ const data = [
     Slide: Slide3,
     keypoints: [
       {
-        content: '6,500+',
-        title: '用户',
+        content: '6,500',
+        title: '用户数',
       },
     ],
   },
@@ -94,11 +95,11 @@ const data = [
     Slide: Slide5,
     keypoints: [
       {
-        content: '8,000,000+',
+        content: '8,000,000',
         title: '二月生成海报数',
       },
       {
-        content: '1,900,000+',
+        content: '1,900,000',
         title: '二月15日',
       },
     ],
@@ -167,12 +168,12 @@ const data = [
     title: 'arkie enterprise',
     subtitle: '2018.10',
     desc: `
-      全面转向企业服务，提供咨询+技术的解决方案。深度了解客户，用咨询的方式将
+      全面转向企业服务，提供咨询+技术的全面解决方案。基于深度了解客户，提供定制化的产品咨询服务，并给予技术集成/开发支持。
       `,
   },
 ]
 
-const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
+const Page = ({ title, subtitle, desc, keypoints, Slide, video }) => (
   <div className={style.container}>
     <div>
       <h1 className={style.event}>
@@ -198,6 +199,9 @@ const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
             ))}
           </ul>
         </Fade>
+      )}
+      {video && (
+        <video src={video} controls='controls' />
       )}
     </div>
     {Slide && (
@@ -231,9 +235,11 @@ const IndexPage = () => {
 
   const footerPage = (
     <div key="footer" className={style.wrap}>
-      <RubberBand>
+      <Fade>
         <h1>一路走来 感谢有你</h1>
-      </RubberBand>
+        <h3 className={style.intro}>爱莲 威撸 Leaf 麦子 Ava 李毅 小洪 口袋 Agnes 俊儒 怀奇 Eliot 阿国 阿菜 家辉 沈毅 Jenny.Du 二豆 华芳 EB 宣宣 Allen 承宇 少将 小清 博深 dio Aoi 阿糊 11 郑叶 佳文 shadow 雷蕊 小麦 York 智豪 小雨 九九 姝雅 Eleven Luna 叶辰 gordomium </h3>
+        <input className={style.nameInput} type="text" name="firstname" placeholder="留下你的名字，一起建设 ARKIE" />
+      </Fade>
     </div>
   )
 

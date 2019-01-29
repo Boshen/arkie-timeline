@@ -10,6 +10,10 @@
 }
 
 .container > div {
+  /* width: 50%; */
+}
+
+.slide {
   width: 50%;
 }
 
@@ -52,6 +56,8 @@
 
 .event {
   position: relative;
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
 .event .event-bullet {
@@ -59,7 +65,7 @@
   height: 32px;
   background: #ffffff;
   position: absolute;
-  top: 64px;
+  top: 24px;
   left: -64px;
 }
 
@@ -92,4 +98,16 @@
 .keypoint-title {
   color: #7F7F7F;
   font-weight: 400;
+}
+
+.nameInput {
+  width: 400px;
+  font-size: 2em;
+  font-weight: 200;
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 8px 0;
+  margin-top: 40px;
 }

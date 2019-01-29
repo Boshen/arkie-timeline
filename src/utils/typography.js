@@ -26,7 +26,7 @@ const typography = new Typography({
   overrideStyles: () => ({
     h1: {
       color: 'white',
-      fontSize: '5em',
+      fontSize: '6em',
       fontWeight: 600,
       textTransform: 'uppercase',
     },

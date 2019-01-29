@@ -37,7 +37,9 @@ const renderTooltip = props => {
         <br />
         保存了 {formatNumber(data.saved)} 张海报
         <br />
-        新增了 {formatNumber(data.users)} 用户
+        新增了 {formatNumber(data.users)} 位用户
+        <br />
+        真是令人难忘的一天
       </div>
     )
   )
@@ -63,7 +65,8 @@ export const Chart = React.memo(({ page }) => {
           type="basis"
           dataKey="acc"
           dot={false}
-          stroke="white"
+          stroke="#666"
+          fill="#171717"
           animationDuration={4000}
         />
       </AreaChart>
