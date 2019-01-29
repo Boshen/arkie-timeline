@@ -1,5 +1,5 @@
 import React from 'react'
-import Swiper from 'react-id-swiper/lib/custom'
+import Swiper from 'react-id-swiper'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import 'react-id-swiper/src/styles/css/swiper.css'
@@ -12,8 +12,12 @@ const params = {
     type: 'bullets',
     clickable: true,
   },
-  spaceBetween: 30,
   autoplay: true,
+  grabCursor: true,
+  keyboard: true,
+  loop: true,
+  mousewheel: true,
+  spaceBetween: 30,
 }
 
 const Slider = ({ children }) => {
@@ -37,7 +41,7 @@ export const slideImage = graphql`
     edges {
       node {
         childImageSharp {
-          fluid(maxWidth: 400, maxHeight: 300) {
+          fluid(maxWidth: 600, maxHeight: 450) {
             ...GatsbyImageSharpFluid
           }
         }
