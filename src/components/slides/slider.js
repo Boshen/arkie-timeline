@@ -41,7 +41,7 @@ export const slideImage = graphql`
     edges {
       node {
         childImageSharp {
-          fluid(maxWidth: 600, maxHeight: 450) {
+          fluid(maxWidth: 800, maxHeight: 600) {
             ...GatsbyImageSharpFluid
           }
         }
