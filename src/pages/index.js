@@ -184,7 +184,7 @@ const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
   <div className={style.container}>
     <div>
       <h1 className={style.event}>
-        <div className={style.eventBullet}/>
+        <div className={style.eventBullet} />
         {title}
       </h1>
       <h3 className={style.time}>{subtitle}</h3>
@@ -211,14 +211,12 @@ const Page = ({ title, subtitle, desc, keypoints, Slide }) => (
 const IndexPage = () => {
   const headerPage = (
     <div key="header" className={style.wrap}>
-      <div className={style.timelineMask}/>
+      <div className={style.timelineMask} />
       <h1 className={style.coverTitle}>
         the history of <br /> <span className={style.largeTitle}>arkie</span>
       </h1>
-      <span
-        className={style.exploreButton}
-      >
-        <Chart />
+      <Chart />
+      <span className={style.exploreButton}>
         EXPLORE
         <span role="img" aria-label="down">
           👇
@@ -242,7 +240,7 @@ const IndexPage = () => {
   return (
     <main>
       <SEO />
-      <div className={style.timeline}/>
+      <div className={style.timeline} />
       {pages}
     </main>
   )
