@@ -85,7 +85,7 @@ const data = [
     Slide: Slide4,
     keypoints: [
       {
-        content: '一点钱',
+        content: '💰',
         title: '首次收入',
       },
     ],
@@ -125,10 +125,6 @@ const data = [
         content: '20家',
         title: '企业名片',
       },
-      {
-        content: '?',
-        title: '生成名片数',
-      },
     ],
   },
   {
@@ -144,10 +140,6 @@ const data = [
       {
         content: '45个',
         title: '新场景',
-      },
-      {
-        content: '?',
-        title: '生成海报数',
       },
     ],
   },
