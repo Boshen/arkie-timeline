@@ -4,7 +4,7 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Bounce from 'react-reveal/Bounce'
 import Tada from 'react-reveal/Tada'
-import RubberBand from 'react-reveal/RubberBand'
+import youd_video from '../images/1/youd_video.mp4'
 
 import SEO from '../components/seo'
 import { Chart } from '../components/chart'
@@ -34,7 +34,7 @@ const data = [
       可以创建、编辑和保存海报。后来才逐步加入设计算法，开始自动生成设计。
       `,
     Slide: Slide1,
-    video: `../1/youd_video.mp4`,
+    video: youd_video,
   },
   {
     title: 'arkie beta',
@@ -201,7 +201,7 @@ const Page = ({ title, subtitle, desc, keypoints, Slide, video }) => (
         </Fade>
       )}
       {video && (
-        <video src={video} controls='controls' />
+        <video src={video} controls='controls' width={300} height={300} />
       )}
     </div>
     {Slide && (
