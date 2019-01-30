@@ -16,12 +16,12 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "scripts": {
-    "build": "yarn && gatsby build",
+    "build": "yarn && gatsby build --prefix-paths",
     "develop": "yarn && gatsby develop",
     "start": "yarn run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "yarn && gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "rm -rf public && yarn build && gh-pages -d public"
   },
   "dependencies": {
     "format-number": "^3.0.0",
