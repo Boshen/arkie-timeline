@@ -75,7 +75,7 @@ const data = [
     ],
   },
   {
-    title: '探索企业服务',
+    title: '探索\n企业服务',
     subtitle: '2017 下半年',
     desc: `
       arkie 首次尝试企业服务，与饿了么 / 微信支付合作。为企业提供规范设计和自动生成的能力，
@@ -199,15 +199,15 @@ const data = [
 const Page = ({ title, subtitle, desc, keypoints, Slide, video }) => (
   <div className={style.container}>
     <div>
-      <h1 className={style.event}>
-        <div className={style.eventBullet} />
+      <h1 className={style.title}>
+        <div className={style.titleBullet} />
         <Fade left>{title}</Fade>
       </h1>
       <Fade left delay={500}>
-        <h3 className={style.time}>{subtitle}</h3>
+        <h3 className={style.subtitle}>{subtitle}</h3>
       </Fade>
       <Fade left delay={1000}>
-        <h3 className={style.intro}>{desc}</h3>
+        <h3 className={style.desc}>{desc}</h3>
       </Fade>
       {keypoints && (
         <Fade left delay={1500}>
