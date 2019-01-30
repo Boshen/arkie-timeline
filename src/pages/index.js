@@ -246,6 +246,7 @@ const IndexPage = () => {
           className={style.nameInput}
           type="text"
           name="firstname"
+          label="name"
           placeholder="留下你的名字，一起建设 ARKIE"
         />
       </Fade>

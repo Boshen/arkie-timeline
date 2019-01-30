@@ -30,6 +30,12 @@ const typography = new Typography({
       fontWeight: 600,
       textTransform: 'uppercase',
     },
+    h2: {
+      color: '#959595'
+    },
+    h3: {
+      color: '#959595'
+    }
   }),
 })
 
