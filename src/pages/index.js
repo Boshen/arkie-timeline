@@ -83,7 +83,12 @@ const data = [
       的团队规模也扩大了不少，从 ARK 办公室搬出来拥有了自己的办公室。
       `,
     Slide: Slide4,
-    keypoints: [],
+    keypoints: [
+      {
+        content: '一点钱',
+        title: '首次收入',
+      },
+    ],
   },
   {
     title: '姓氏吉言',
