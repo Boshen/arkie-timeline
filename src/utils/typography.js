@@ -31,10 +31,10 @@ const typography = new Typography({
       textTransform: 'uppercase',
     },
     h2: {
-      color: '#a2a2a2'
+      color: '#b3b3b3'
     },
     h3: {
-      color: '#a2a2a2'
+      color: '#b3b3b3'
     }
   }),
 })
