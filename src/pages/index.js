@@ -81,8 +81,7 @@ const data = [
       的团队规模也扩大了不少，从 ARK 办公室搬出来拥有了自己的办公室。
       `,
     Slide: Slide4,
-    keypoints: [
-    ],
+    keypoints: [],
   },
   {
     title: '姓氏吉言',
@@ -178,9 +177,7 @@ const Page = ({ title, subtitle, desc, keypoints, Slide, video }) => (
     <div>
       <h1 className={style.event}>
         <div className={style.eventBullet} />
-        <Fade left>
-          {title}
-        </Fade>
+        <Fade left>{title}</Fade>
       </h1>
       <Fade left delay={500}>
         <h3 className={style.time}>{subtitle}</h3>
@@ -201,13 +198,15 @@ const Page = ({ title, subtitle, desc, keypoints, Slide, video }) => (
         </Fade>
       )}
       {video && (
-        <video src={video} controls='controls' width={300} height={300} />
+        <Fade left delay={2000}>
+          <video src={video} controls="controls" width={300} height={300} />
+        </Fade>
       )}
     </div>
     {Slide && (
       <Bounce delay={2500}>
         <div className={style.slide}>
-            <Slide />
+          <Slide />
         </div>
       </Bounce>
     )}
@@ -237,8 +236,18 @@ const IndexPage = () => {
     <div key="footer" className={style.wrap}>
       <Fade>
         <h1>一路走来 感谢有你</h1>
-        <h3 className={style.intro}>爱莲 威撸 Leaf 麦子 Ava 李毅 小洪 口袋 Agnes 俊儒 怀奇 Eliot 阿国 阿菜 家辉 沈毅 Jenny.Du 二豆 华芳 EB 宣宣 Allen 承宇 少将 小清 博深 dio Aoi 阿糊 11 郑叶 佳文 shadow 雷蕊 小麦 York 智豪 小雨 九九 姝雅 Eleven Luna 叶辰 gordomium </h3>
-        <input className={style.nameInput} type="text" name="firstname" placeholder="留下你的名字，一起建设 ARKIE" />
+        <h3 className={style.intro}>
+          爱莲 威撸 Leaf 麦子 Ava 李毅 小洪 口袋 Agnes 俊儒 怀奇 Eliot 阿国 阿菜
+          家辉 沈毅 Jenny.Du 二豆 华芳 EB 宣宣 Allen 承宇 少将 小清 博深 dio Aoi
+          阿糊 11 郑叶 佳文 shadow 雷蕊 小麦 York 智豪 小雨 九九 姝雅 Eleven
+          Luna 叶辰 gordomium{' '}
+        </h3>
+        <input
+          className={style.nameInput}
+          type="text"
+          name="firstname"
+          placeholder="留下你的名字，一起建设 ARKIE"
+        />
       </Fade>
     </div>
   )

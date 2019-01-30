@@ -7,30 +7,28 @@ import 'react-id-swiper/src/styles/css/swiper.css'
 // https://github.com/kidjp85/react-id-swiper
 
 const params = {
-  autoplay: true,
+  autoplay: {
+    delay: 2500,
+  },
   effect: 'fade',
   grabCursor: true,
   keyboard: true,
   loop: true,
-  mousewheel: true,
-  spaceBetween: 30,
 }
 
-const Slider = ({ children }) => {
-  return <Swiper {...params}>{children}</Swiper>
-}
-
-export const renderSlide = data => (
-  <Slider>
-    {data.images &&
-      data.images.edges.map(img => (
+export const renderSlide = data =>
+  data.images && (
+    <Swiper {...params}>
+      {data.images.edges.map(img => (
         <Img
+          fadeIn={true}
+          critical={true}
           key={img.node.childImageSharp.fluid.src}
           fluid={img.node.childImageSharp.fluid}
         />
       ))}
-  </Slider>
-)
+    </Swiper>
+  )
 
 export const slideImage = graphql`
   fragment slideImage on FileConnection {
@@ -38,7 +36,7 @@ export const slideImage = graphql`
       node {
         childImageSharp {
           fluid(maxWidth: 800, maxHeight: 600) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }

@@ -9,10 +9,6 @@
   min-height: 100vh;
 }
 
-.container > div {
-  /* width: 50%; */
-}
-
 .slide {
   width: 50%;
 }
