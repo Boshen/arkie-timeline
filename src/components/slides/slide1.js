@@ -10,7 +10,7 @@ export const Slide1 = () => (
         images: allFile(
           filter: {
             extension: { in: ["png", "jpg"] }
-            relativePath: { regex: "/^1/" }
+            relativePath: { regex: "/^1\//" }
           }
         ) {
           ...slideImage
