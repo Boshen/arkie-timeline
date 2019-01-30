@@ -96,12 +96,12 @@ const data = [
     Slide: Slide5,
     keypoints: [
       {
-        content: '8,000,000',
-        title: '二月生成海报数',
-      },
-      {
         content: '1,900,000',
         title: '二月15日',
+      },
+      {
+        content: '8,000,000',
+        title: '二月生成海报数',
       },
     ],
   },
@@ -115,6 +115,16 @@ const data = [
       arkie 小名片。
       `,
     Slide: Slide6,
+    keypoints: [
+      {
+        content: '19家',
+        title: '企业名片',
+      },
+      {
+        content: '?',
+        title: '生成名片数',
+      },
+    ],
   },
   {
     title: '搜索新场景',
@@ -125,6 +135,16 @@ const data = [
       比如做了愚人节、母亲节贺卡，在节日时间制作海报送人祝福。
       `,
     Slide: Slide7,
+    keypoints: [
+      {
+        content: '45个',
+        title: '新场景',
+      },
+      {
+        content: '?',
+        title: '生成海报数',
+      },
+    ],
   },
   {
     title: 'arkie 2.0',
@@ -161,7 +181,7 @@ const data = [
         title: '用户创建场景数',
       },
       {
-        content: '6,000,000+',
+        content: '6,000,000',
         title: '生成海报数',
       },
     ],
