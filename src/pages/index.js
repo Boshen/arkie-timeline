@@ -19,6 +19,8 @@ import {
   Slide7,
   Slide8,
   Slide9,
+  Slide10,
+  Slide11,
 } from '../components/slides/'
 
 import './index.css'
@@ -152,6 +154,7 @@ const data = [
       服务。用户可以用 arkie 制作属于自己的日签小程序，给自己的粉丝每日打卡，增进互动。
       除了吴晓波，早期还有许多有名的合作客户，包括言几又、樊登、上海时装周、衣二三等等。
       `,
+    Slide: Slide10,
     keypoints: [
       {
         content: '4331',
@@ -169,6 +172,7 @@ const data = [
     desc: `
       全面转向企业服务，提供咨询+技术的全面解决方案。基于深度了解客户，提供定制化的产品咨询服务，并给予技术集成/开发支持。
       `,
+    Slide: Slide11,
   },
 ]
 
